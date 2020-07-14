@@ -6,8 +6,12 @@ class Transaction
     @balance = 0
   end
 
-  def deposit(ammount)
-    @balance += ammount
+  def deposit(add_ammount)
+    @balance += add_ammount
+  end
+
+  def withdrawal(subtract_ammount)
+    @balance -= subtract_ammount
   end
 
 end
