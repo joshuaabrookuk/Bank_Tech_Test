@@ -4,7 +4,7 @@ class Transaction
 
   def initialize
     @balance = 0
-    @header = "date || credit || debit || balance"
+    @header = 'date || credit || debit || balance'
   end
 
   def deposit(add_ammount)
