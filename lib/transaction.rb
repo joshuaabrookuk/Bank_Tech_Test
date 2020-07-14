@@ -6,8 +6,8 @@ class Transaction
     @balance = 0
   end
 
-  def deposit(x)
-    @balance += x
+  def deposit(ammount)
+    @balance += ammount
   end
 
 end

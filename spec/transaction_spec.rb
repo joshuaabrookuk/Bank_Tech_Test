@@ -1,12 +1,14 @@
 require 'transaction'
 
 describe Transaction do
+  # before(:each) do
+  #   transaction = Transaction.new
+  # end
 
   it 'should respond to deposit with integer argument' do
     transaction = Transaction.new
     expect(transaction.deposit(1000)).to eq 1000
   end
-
 
   it 'should add the and return the sum of deposits' do
     transaction = Transaction.new
