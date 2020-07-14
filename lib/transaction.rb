@@ -1,7 +1,13 @@
 class Transaction
 
+  attr_reader :balance
+
+  def initialize
+    @balance = 0
+  end
+
   def deposit(x)
-    p x
+    @balance += x
   end
 
 end
