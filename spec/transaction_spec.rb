@@ -27,7 +27,7 @@ describe Transaction do
 
   it 'should respond to print method' do
     transaction = Transaction.new
-    expect(transaction.print_out).to eq "date || credit || debit || balance"
+    expect(transaction.print_out).to eq @header
   end
 
 end
