@@ -26,7 +26,7 @@ class Transaction
   end
 
   def print_out
-    p @header
+    # puts @header
     # @transact.each do |x|
     #   puts x
     # end
