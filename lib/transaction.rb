@@ -5,7 +5,7 @@ class Transaction
   def initialize
     @balance = 0
     @header = 'date || credit || debit || balance'
-    @transaction = []
+    @transact = []
     @created_at = Time.now.strftime("%d/%m/%Y")
   end
 
@@ -18,7 +18,7 @@ class Transaction
     trans = "#{@created_at} || #{add_ammount_converted} || || #{balance_converted}"
 
     # @transaction << [Time.now.strftime("%d %m %Y"),"||",'%.2f' % add_ammount]
-    @transaction << trans
+    @transact << trans
   end
 
   def withdrawal(subtract_ammount)
@@ -27,6 +27,9 @@ class Transaction
 
   def print_out
     p @header
+    # @transact.each do |x|
+    #   puts x
+    # end
   end
 
 end
