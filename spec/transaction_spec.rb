@@ -7,7 +7,8 @@ describe Transaction do
 
   it 'should respond to deposit with integer argument' do
     transaction = Transaction.new
-    expect(transaction.deposit(1000)).to eq 1000
+    transaction.deposit(1000)
+    expect(transaction.balance).to eq 1000
   end
 
   it 'should add and return the sum of deposits' do
@@ -25,10 +26,10 @@ describe Transaction do
     expect(transaction.balance).to eq 2500
   end
 
-  it 'should respond to print method' do
-    transaction = Transaction.new
-    expect(transaction.print_out[0]).to eq 'date || credit || debit || balance'
-  end
+  # it 'should respond to print method' do
+  #   transaction = Transaction.new
+  #   expect(transaction.print_out).to 'date || credit || debit || balance'
+  # end
 
   # it 'should print first transaction' do
   #   transaction = Transaction.new
