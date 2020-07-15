@@ -45,6 +45,16 @@ describe Transaction do
     expect(transaction.transact[1]).to eq "#{transaction.created_at} || 1000.00 || || 1000.00"
   end
 
+  it 'print method should show most recent transcation first' do
+    transaction = Transaction.new
+    transaction.deposit(1000)
+    transaction.deposit(2000)
+    transaction.print_out
+    expect(transaction.transact[1]).to eq "#{transaction.created_at} || 2000.00 || || 3000.00"
+  end
+
+
+
   # it 'print method should print first transaction' do
   #   transaction = Transaction.new
   #   transaction.deposit(1000)
