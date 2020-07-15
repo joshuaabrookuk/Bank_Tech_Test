@@ -31,16 +31,11 @@ describe Transaction do
     expect(transaction.print_out).to include 'date || credit || debit || balance'
   end
 
-  # it 'should respond to print method' do
-  #   transaction = Transaction.new
-  #   expect(transaction.header).to include 'date || credit || debit || balance'
-  # end
+  it 'print method should print first transaction' do
+    transaction = Transaction.new
+    transaction.deposit(1000)
+    expect(transaction.print_out).to include '|| 1000.00 || || 1000.00'
+  end
 
-  # it 'should print first transaction' do
-  #   transaction = Transaction.new
-  #   transaction.deposit(1000)
-  #   expect(transaction.print_out).to eq @header
-  # end
-  
 
 end
