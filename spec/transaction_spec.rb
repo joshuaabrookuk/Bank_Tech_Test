@@ -53,4 +53,13 @@ describe Transaction do
     expect(transaction.transact[1]).to eq "#{transaction.created_at} || 2000.00 || || 3000.00"
   end
 
+  it 'print method should have correctly formatted withdrawal method' do
+    transaction = Transaction.new
+    transaction.deposit(1000)
+    transaction.deposit(2000)
+    transaction.withdrawal(500)
+    transaction.print_out
+    expect(transaction.transact[1]).to eq "#{transaction.created_at} || || 500.00 || 2500.00"
+  end
+
 end
