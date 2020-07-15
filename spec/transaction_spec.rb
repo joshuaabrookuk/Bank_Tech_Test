@@ -38,6 +38,13 @@ describe Transaction do
     expect(transaction.transact[0]).to eq "date || credit || debit || balance"
   end
 
+  it 'print method should show transaction' do
+    transaction = Transaction.new
+    transaction.deposit(1000)
+    transaction.print_out
+    expect(transaction.transact[1]).to eq "#{transaction.created_at} || 1000.00 || || 1000.00"
+  end
+
   # it 'print method should print first transaction' do
   #   transaction = Transaction.new
   #   transaction.deposit(1000)

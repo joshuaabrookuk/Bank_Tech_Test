@@ -1,6 +1,6 @@
 class Transaction
 
-  attr_reader :balance, :header, :transact
+  attr_reader :balance, :header, :transact, :created_at
 
   def initialize
     @balance = 0
@@ -26,6 +26,6 @@ class Transaction
   end
 
   def print_out
-    puts @transact << @header
+    puts @transact.unshift(@header)
   end
 end
