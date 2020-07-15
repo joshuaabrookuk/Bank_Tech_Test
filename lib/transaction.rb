@@ -26,6 +26,7 @@ class Transaction
   end
 
   def print_out
+    @transact.reverse!
     puts @transact.unshift(@header)
   end
 end
