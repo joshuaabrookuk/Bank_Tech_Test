@@ -34,7 +34,8 @@ describe Transaction do
 
   it 'print method should print header' do
     transaction = Transaction.new
-    expect(transaction.transact[0]).to eq 'date || credit || debit || balance'
+    transaction.print_out
+    expect(transaction.transact[0]).to eq "date || credit || debit || balance"
   end
 
   # it 'print method should print first transaction' do

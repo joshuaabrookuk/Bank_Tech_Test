@@ -1,6 +1,6 @@
 class Transaction
 
-  attr_reader :balance, :header
+  attr_reader :balance, :header, :transact
 
   def initialize
     @balance = 0
@@ -26,10 +26,6 @@ class Transaction
   end
 
   def print_out
-    # puts @header
-    # @transact.each do |x|
-    #   puts x
-    # end
+    puts @transact << @header
   end
-
 end
