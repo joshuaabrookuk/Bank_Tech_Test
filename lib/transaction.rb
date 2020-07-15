@@ -18,6 +18,9 @@ class Transaction
 
   def withdrawal(subtract_ammount)
     @balance -= subtract_ammount
+    subtract_ammount_converted = '%.2f' % subtract_ammount
+    balance_converted = '%.2f' % @balance
+    @transact << "#{@created_at} || || #{subtract_ammount_converted} || #{balance_converted}"
   end
 
   def print_out
