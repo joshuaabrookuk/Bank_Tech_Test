@@ -26,16 +26,16 @@ class Transaction
   end
 
   def print_out
-    puts @header
-    @transaction.each do |x|
-      puts x
+    @header
+    # @transaction.each do |x|
+    #   puts x
     end
   end
 
-  private
+  # private
 
   # def time
   #   @created_at = Time.now.strftime("%d/%m/%Y")
   # end
 
-end
+# end

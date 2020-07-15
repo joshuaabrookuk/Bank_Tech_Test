@@ -26,9 +26,14 @@ describe Transaction do
     expect(transaction.balance).to eq 2500
   end
 
+  it 'print method should print header' do
+    transaction = Transaction.new
+    expect(transaction.print_out).to include 'date || credit || debit || balance'
+  end
+
   # it 'should respond to print method' do
   #   transaction = Transaction.new
-  #   expect(transaction.print_out).to 'date || credit || debit || balance'
+  #   expect(transaction.header).to include 'date || credit || debit || balance'
   # end
 
   # it 'should print first transaction' do
