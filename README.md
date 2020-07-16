@@ -89,6 +89,10 @@ date || credit || debit || balance
 16/07/2020 || 1000.00 || || 1000.00
 ```
 
+- exit irb with `control/^ & 'z'` command (Mac)
+
+![7 Rsec tests and example of use](/images/rpsec_working_IRB_example.png)
+
 ### Reflection
 
 *Things I need to do to improve this project* <br>
