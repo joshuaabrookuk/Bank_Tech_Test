@@ -40,21 +40,21 @@ Link to very rough scribbles
 
 *Extracting infomation from the user scenario*.
 
-Given a **client** makes a **deposit** of **1000** on **10-01-2012**
-          *user*              *method*    *interger*    *Time class*
-And a **deposit** of **2000** on **13-01-2012**  
-       *method*    *interger*    *Time class*
-And a **withdrawal** of **500** on **14-01-2012**
-         *method*    *interger*    *Time class*
-When **she** **prints** her **bank statement**, Then she would see:
-     *user*   *method*          *object*   
+Given a **client** makes a **deposit** of **1000** on **10-01-2012**  <br>
+          *user*              *method*    *interger*    *Time class* <br>
+And a **deposit** of **2000** on **13-01-2012**  <br>
+       *method*    *interger*    *Time class* <br>
+And a **withdrawal** of **500** on **14-01-2012** <br>
+         *method*    *interger*    *Time class* <br>
+When **she** **prints** her **bank statement**, Then she would see: <br>
+     *user*   *method*          *object* <br>
 
-*line 1///* date || credit || debit || balance *<--- Header*
-*line 2///* 14/01/2012 || || 500.00 || 2500.00 *<--- Transaction 3*
-*line 3///* 13/01/2012 || 2000.00 || || 3000.00 *<--- Transaction 2*
-*line 4///* 10/01/2012 || 1000.00 || || 1000.00 *<--- Transaction 1*
-- *transactions in decending order*
-- *data seperated using* '||' *dividors*
+*line 1///* date || credit || debit || balance *<--- Header* <br>
+*line 2///* 14/01/2012 || || 500.00 || 2500.00 *<--- Transaction 3* <br>
+*line 3///* 13/01/2012 || 2000.00 || || 3000.00 *<--- Transaction 2* <br>
+*line 4///* 10/01/2012 || 1000.00 || || 1000.00 *<--- Transaction 1* <br>
+- *transactions in decending order* <br>
+- *data seperated using* '||' *dividors* <br>
 
 - 1. 'Time' of transaction, formatted with .strftime
 - 2. 'Credit' the ammout added to balance, formatted with decimals
