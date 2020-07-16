@@ -75,10 +75,11 @@ don't run `rubocop` to check code syntax
 
 ### Refelction
 
-*Things I need to do to impove this project*
+*Things I need to do to impove this project* <br>
+*Vague, unspecific, unactionable ideas inclue:* <br>
 
-Split classes
-Split Methods
-Rename variables and arugments
-Write better tests
-Test edge cases
+Split classes <br>
+Split Methods <br>
+Rename variables and arugments <br>
+Write better tests <br>
+Test edge cases <br>
