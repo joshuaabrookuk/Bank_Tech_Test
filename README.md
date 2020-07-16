@@ -41,13 +41,13 @@ Link to very rough scribbles
 *Extracting infomation from the user scenario*.
 
 Given a **client** makes a **deposit** of **1000** on **10-01-2012**  <br>
----------*user*-------------*method*---*interger*----*Time class* <br>
+---------*user*-----------*method*---*interger*----*Time class* <br>
 And a **deposit** of **2000** on **13-01-2012**  <br>
--------*method*----*interger* --*Time class* <br>
+-------*method*---*interger* --*Time class* <br>
 And a **withdrawal** of **500** on **14-01-2012** <br>
--------*method*----*interger* --*Time class* <br>
+-------*method*-----*interger* --*Time class* <br>
 When **she** **prints** her **bank statement**, Then she would see: <br>
------*user*--*method*--------*object* <br>
+------*user*-*method*-------*object* <br>
 
 *line 1///* **date || credit || debit || balance** *<--- Header* <br>
 *line 2///* **14/01/2012 || || 500.00 || 2500.00** *<--- Transaction 3* <br>
