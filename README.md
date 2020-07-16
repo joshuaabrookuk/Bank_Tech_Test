@@ -27,9 +27,6 @@ date || credit || debit || balance
 
 ## Plan:
 
-![Very rough scribbles page 1](images/BTT_workings_out_scribble.jpg)
-![Very rough scribbles page 2](images/BTT_workings_out_scribble_2.jpg)
-
 * Set-up a Github repo
 * Set-u repo and + README.md locally
 * Initialize rspec, rubocop and simplecov in Gemfile, as well as .gitingnore
