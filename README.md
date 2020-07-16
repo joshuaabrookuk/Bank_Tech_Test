@@ -94,8 +94,8 @@ date || credit || debit || balance
 *Things I need to do to improve this project* <br>
 *Vague, unspecific, unactionable ideas include:* <br>
 
-Split classes <br>
-Split Methods <br>
-Rename variables and arguments <br>
-Write better tests <br>
-Test edge cases <br>
+- Split classes <br>
+- Split Methods <br>
+- Rename variables and arguments <br>
+- Write better tests <br>
+- Test edge cases <br>
