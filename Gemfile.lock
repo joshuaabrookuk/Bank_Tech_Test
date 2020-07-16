@@ -26,7 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rubocop (~> 0.39.0)
+  rubocop
   simplecov
 
 BUNDLED WITH
