@@ -72,6 +72,22 @@ run `open coverage/index.html` to run simplecov and see test coverage
 
 don't run `rubocop` to check code syntax
 
+run `irb -r ./lib/transaction.rb`
+- create a new instance of transaction
+`transaction = Transaction.new`
+- make a deposit using the `deposit` method
+`transaction.deposit(1000)`
+- make a withdrawal using the `withdrawal` method
+`transaction.withdrawal(500)`
+- print your transaction history using the `print_out` method
+`transaction.print_out`
+(It should look **beatuful!**)
+
+```
+date || credit || debit || balance
+16/07/2020 || || 500.00 || 500.00
+16/07/2020 || 1000.00 || || 1000.00
+```
 
 ### Reflection
 
