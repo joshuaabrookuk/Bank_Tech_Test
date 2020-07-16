@@ -27,7 +27,8 @@ date || credit || debit || balance
 
 ## Plan:
 
-Link to very rough scribbles
+![Very rough scribbles page 1](images/BTT_workings_out_scribble.jpg)
+![Very rough scribbles page 2](images/BTT_workings_out_scribble_2.jpg)
 
 * Set-up a Github repo
 * Set-u repo and + README.md locally
@@ -81,7 +82,7 @@ run `irb -r ./lib/transaction.rb`
 `transaction.withdrawal(500)`
 - print your transaction history using the `print_out` method
 `transaction.print_out`
-(It should look **beatuful!**)
+(It should look **beautiful!**)
 
 ```
 date || credit || debit || balance
@@ -91,7 +92,7 @@ date || credit || debit || balance
 
 - exit irb with `control/^ & 'z'` command (Mac)
 
-![7 Rsec tests and example of use](/images/rpsec_working_IRB_example.png)
+![7 rspec tests and example of use](/images/rpsec_working_IRB_example.png)
 
 ### Reflection
 
