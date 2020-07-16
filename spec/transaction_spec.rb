@@ -30,7 +30,7 @@ describe Transaction do
   #   transaction = Transaction.new
   #   expect(transaction.print_out).to include 'date || credit || debit || balance'
   # end
-  # This text works if I 'p @header' in my method but oviously outputs with sting which I don't want, would like feedback / guidance on this.
+  # This text works if I 'p @header' in my method but oviously outputs with sting which I don't want, would like feedback / guidance on this. I looked into stdout but couldn't figure it out.
 
   it 'print method should print header' do
     transaction = Transaction.new
@@ -61,5 +61,4 @@ describe Transaction do
     transaction.print_out
     expect(transaction.transact[1]).to eq "#{transaction.created_at} || || 500.00 || 2500.00"
   end
-
 end

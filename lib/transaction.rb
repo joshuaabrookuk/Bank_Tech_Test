@@ -1,5 +1,4 @@
 class Transaction
-
   attr_reader :balance, :header, :transact, :created_at
 
   def initialize
