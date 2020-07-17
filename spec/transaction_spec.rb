@@ -35,14 +35,14 @@ describe Transaction do
   it 'print method should print header' do
     transaction = Transaction.new
     transaction.print_out
-    expect(transaction.single_transaction[0]).to eq 'date || credit || debit || balance'
+    expect(transaction.transaction_list[0]).to eq 'date || credit || debit || balance'
   end
 
   it 'print method should show transaction' do
     transaction = Transaction.new
     transaction.deposit(1000)
     transaction.print_out
-    expect(transaction.single_transaction[1]).to eq "#{transaction.created_at} || 1000.00 || || 1000.00"
+    expect(transaction.transaction_list[1]).to eq "#{transaction.created_at} || 1000.00 || || 1000.00"
   end
 
   it 'print method should show most recent transcation first' do
@@ -50,7 +50,7 @@ describe Transaction do
     transaction.deposit(1000)
     transaction.deposit(2000)
     transaction.print_out
-    expect(transaction.single_transaction[1]).to eq "#{transaction.created_at} || 2000.00 || || 3000.00"
+    expect(transaction.transaction_list[1]).to eq "#{transaction.created_at} || 2000.00 || || 3000.00"
   end
 
   it 'print method should have correctly formatted withdrawal method' do
@@ -59,6 +59,6 @@ describe Transaction do
     transaction.deposit(2000)
     transaction.withdrawal(500)
     transaction.print_out
-    expect(transaction.single_transaction[1]).to eq "#{transaction.created_at} || || 500.00 || 2500.00"
+    expect(transaction.transaction_list[1]).to eq "#{transaction.created_at} || || 500.00 || 2500.00"
   end
 end

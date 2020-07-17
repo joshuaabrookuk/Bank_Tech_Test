@@ -68,7 +68,7 @@ run `rspec` to run tests
 
 run `open coverage/index.html` to run simplecov and see test coverage
 
-don't run `rubocop` to check code syntax
+run `rubocop` to check code quality (Needs improvement)
 
 run `irb -r ./lib/transaction.rb`
 - create a new instance of transaction
@@ -101,3 +101,4 @@ date || credit || debit || balance
 - Rename variables and arguments <br>
 - Write better tests <br>
 - Test edge cases <br>
+- Fix syntax issues raised by rubocop

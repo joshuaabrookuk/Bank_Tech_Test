@@ -1,29 +1,29 @@
 class Transaction
-  attr_reader :balance, :header, :single_transaction, :created_at
+  attr_reader :balance, :header, :transaction_list, :created_at
 
   def initialize
     @balance = 0
     @header = 'date || credit || debit || balance'
-    @single_transaction = []
+    @transaction_list = []
     @created_at = Time.now.strftime('%d/%m/%Y')
   end
 
-  def deposit(add_ammount)
-    @balance += add_ammount
-    add_ammount_converted = '%.2f' % add_ammount
+  def deposit(add_amount)
+    @balance += add_amount
+    add_amount_converted = '%.2f' % add_amount
     balance_converted = '%.2f' % @balance
-    @single_transaction << "#{@created_at} || #{add_ammount_converted} || || #{balance_converted}"
+    @transaction_list << "#{@created_at} || #{add_amount_converted} || || #{balance_converted}"
   end
 
-  def withdrawal(subtract_ammount)
-    @balance -= subtract_ammount
-    subtract_ammount_converted = '%.2f' % subtract_ammount
+  def withdrawal(subtract_amount)
+    @balance -= subtract_amount
+    subtract_amount_converted = '%.2f' % subtract_amount
     balance_converted = '%.2f' % @balance
-    @single_transaction << "#{@created_at} || || #{subtract_ammount_converted} || #{balance_converted}"
+    @transaction_list << "#{@created_at} || || #{subtract_amount_converted} || #{balance_converted}"
   end
 
   def print_out
-    @single_transaction.reverse!
-    puts @single_transaction.unshift(@header)
+    @transaction_list.reverse!
+    puts @transaction_list.unshift(@header)
   end
 end
